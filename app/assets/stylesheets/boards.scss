@@ -1,3 +1,20 @@
 // Place all the styles related to the boards controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note {
+   background: #ffe7a6;
+   padding: 1em;
+   width: 10em;
+   height: 10em;
+   text-align: center;
+   margin: 0.5em;
+
+  .title {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,14 @@
+<div class="main">
+  <div class="container">
+    <h1><%= @board.title %></h1>
+    <p><a href="/boards/<%= @board.id %>/notes/new">Add note</a></p>
+    <div class="notes">
+      <% @board.notes.each do |note| %>
+        <div class="note">
+          <p class="title"><%= note.title %></p>
+          <p class="body"><%= note.body %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
